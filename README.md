@@ -184,7 +184,7 @@ RoyalVision follows a layered analytics architecture:
 
 
 
-                    
+
 
 ## 📁 Project Structure
 
@@ -270,3 +270,36 @@ The Power BI report provides an additional analytical layer alongside the React 
 ### Power BI Report
 
 powerbi/RoyalVision.pbix
+
+
+## 🔌 Backend API
+
+RoyalVision exposes cricket analytics through REST APIs built with Node.js and Express.
+
+### API Modules
+
+| Module | Purpose |
+|---|---|
+| Overview | Overall dataset and dashboard KPIs |
+| Batting | Batting statistics and performance |
+| Bowling | Bowling statistics and performance |
+| Team | Team performance and match analysis |
+| Player | Player-level analytics |
+| Venue | Venue-wise performance |
+
+### API Structure
+
+```text
+React Dashboard
+       │
+       ▼
+   REST APIs
+       │
+       ▼
+Node.js + Express
+       │
+       ▼
+   PostgreSQL
+       │
+       ▼
+Analytics SQL Queries
