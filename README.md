@@ -1,12 +1,110 @@
-# RoyalVision
+# 🏏 RoyalVision
 
-An advanced cricket analytics and decision support platform inspired by the analytical needs of an IPL franchise.
+Advanced Cricket Analytics & Decision Support Platform
 
-## Tech Stack
+RoyalVision is a full-stack cricket analytics platform designed to transform
+IPL match data into meaningful performance insights through interactive
+dashboards, statistical analysis, and team/player intelligence.
 
-- React
-- Node.js
-- Express
-- PostgreSQL
-- Python
-- Pandas
+---
+
+## 🎯 Project Objective
+
+RoyalVision brings together data engineering, SQL analytics, backend APIs,
+interactive React dashboards, and Power BI reporting into a single cricket
+analytics platform.
+
+The platform focuses on answering questions such as:
+
+- How is a team performing across seasons?
+- Which players are the strongest performers?
+- How does batting and bowling performance change over time?
+- Which venues favor a team?
+- How does a team perform against different opponents?
+- What are the team's scoring and bowling patterns?
+- Which players have produced the most runs and wickets?
+
+---
+
+## 🚀 Key Features
+
+### 📊 Overview Dashboard
+- Overall IPL dataset KPIs
+- Match and season summaries
+- Team performance trends
+- Top run scorers
+- Top wicket takers
+- Scoring profile
+- Seasonal analysis
+
+### 🏏 Batting Analytics
+- Total runs
+- Strike rate
+- Boundary analysis
+- Seasonal batting trends
+- Top run scorers
+- Player-level batting performance
+
+### 🎯 Bowling Analytics
+- Total wickets
+- Economy rate
+- Runs conceded
+- Dot balls
+- Wickets by season
+- Top wicket takers
+- Bowler performance table
+
+### 🏆 Team Analytics
+- Matches played
+- Wins and losses
+- Win percentage
+- Highest score
+- Season-wise performance
+- Venue performance
+- Toss analysis
+- Match results
+
+### 👤 Player Analytics
+- Player performance
+- Batting statistics
+- Bowling statistics
+- Player spotlight
+- Player images and profiles
+
+### 🏟️ Venue Analytics
+- Venue-wise performance
+- Matches played
+- Wins and losses
+- Team performance across venues
+
+---
+
+## 🧠 Analytics Architecture
+
+```text
+Raw IPL Dataset
+      │
+      ▼
+Python / Pandas
+      │
+      ▼
+Data Cleaning & Filtering
+      │
+      ▼
+PostgreSQL
+      │
+      ├── Overview Analytics
+      ├── Batting Analytics
+      ├── Bowling Analytics
+      ├── Team Analytics
+      ├── Venue Analytics
+      └── RR Analysis
+      │
+      ▼
+Node.js + Express APIs
+      │
+      ▼
+React Dashboard
+      │
+      ▼
+Interactive Cricket Analytics
