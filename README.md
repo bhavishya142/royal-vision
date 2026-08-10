@@ -108,3 +108,87 @@ React Dashboard
       │
       ▼
 Interactive Cricket Analytics
+
+---
+
+## 📸 Dashboard Preview
+
+### Overview Dashboard
+
+![RoyalVision Overview](docs/screenshots/overview.png)
+
+### Batting Analytics
+
+![RoyalVision Batting Analytics](docs/screenshots/batting.png)
+
+### Bowling Analytics
+
+![RoyalVision Bowling Analytics](docs/screenshots/bowling.png)
+
+### Team Analytics
+
+![RoyalVision Team Analytics](docs/screenshots/team.png)
+
+### Player Analytics
+
+![RoyalVision Player Analytics](docs/screenshots/player.png)
+
+### Venue Analytics
+
+![RoyalVision Venue Analytics](docs/screenshots/venue.png)
+
+---
+
+
+## 📁 Project Structure
+
+```text
+RoyalVision/
+│
+├── backend/
+│   └── src/
+│       ├── config/
+│       ├── constants/
+│       ├── controllers/
+│       ├── middleware/
+│       ├── routes/
+│       └── services/
+│
+├── frontend/
+│   ├── public/
+│   │   ├── players/
+│   │   └── teams/
+│   └── src/
+│       ├── api/
+│       ├── components/
+│       ├── pages/
+│       ├── charts/
+│       ├── data/
+│       ├── styles/
+│       ├── theme/
+│       └── utils/
+│
+├── database/
+│   └── analytics/
+│       ├── 01_overview.sql
+│       ├── 02_batting.sql
+│       ├── 03_bowling.sql
+│       ├── 04_team.sql
+│       ├── 05_venue.sql
+│       └── 06_rr_analysis.sql
+│
+├── datasets/
+│   └── raw/
+│
+├── scripts/
+│   ├── check_schema.py
+│   └── filter_dataset.py
+│
+├── powerbi/
+│   └── RoyalVision.pbix
+│
+├── docs/
+│   └── screenshots/
+│
+├── docker-compose.yml
+└── README.md
