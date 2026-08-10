@@ -192,3 +192,35 @@ RoyalVision/
 │
 ├── docker-compose.yml
 └── README.md
+
+
+---
+
+## ⚙️ Installation & Setup
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/bhavishya142/royal-vision.git
+cd royal-vision---
+
+## 🔌 API Documentation
+
+RoyalVision exposes REST APIs through a Node.js and Express backend.
+The APIs retrieve analytical data from PostgreSQL and provide it to the React dashboard.
+
+### Base URL
+http://localhost:5000/api
+
+
+---
+
+## 📈 Power BI Analytics
+
+RoyalVision also includes a Power BI report for interactive business intelligence and analytical reporting.
+
+The Power BI report provides an additional analytical layer alongside the React dashboard.
+
+### Power BI Report
+
+powerbi/RoyalVision.pbix
