@@ -140,6 +140,52 @@ Interactive Cricket Analytics
 ---
 
 
+## 🏗️ System Architecture
+
+RoyalVision follows a layered analytics architecture:
+
+```text
+                    ┌─────────────────────┐
+                    │    IPL Match Data   │
+                    │   CSV / Raw Dataset  │
+                    └──────────┬──────────┘
+                               │
+                               ▼
+                    ┌─────────────────────┐
+                    │   Python / Pandas   │
+                    │ Data Cleaning & ETL │
+                    └──────────┬──────────┘
+                               │
+                               ▼
+                    ┌─────────────────────┐
+                    │     PostgreSQL      │
+                    │   Analytics Layer   │
+                    └──────────┬──────────┘
+                               │
+                 ┌─────────────┴─────────────┐
+                 │                           │
+                 ▼                           ▼
+        ┌─────────────────┐        ┌─────────────────┐
+        │ SQL Analytics   │        │ Node.js /       │
+        │ Queries         │        │ Express APIs    │
+        └─────────────────┘        └────────┬────────┘
+                                            │
+                                            ▼
+                                  ┌─────────────────┐
+                                  │ React Frontend  │
+                                  │ Interactive     │
+                                  │ Dashboard       │
+                                  └─────────────────┘
+
+                    ┌─────────────────────┐
+                    │     Power BI        │
+                    │ Business Reporting  │
+                    └─────────────────────┘
+
+
+
+                    
+
 ## 📁 Project Structure
 
 ```text
