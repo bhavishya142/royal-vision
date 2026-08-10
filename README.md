@@ -1,6 +1,6 @@
 # 🏏 RoyalVision
 
-Advanced Cricket Analytics & Decision Support Platform
+## Advanced Cricket Analytics & Decision Support Platform
 
 RoyalVision is a full-stack cricket analytics platform designed to transform
 IPL match data into meaningful performance insights through interactive
@@ -29,6 +29,7 @@ The platform focuses on answering questions such as:
 ## 🚀 Key Features
 
 ### 📊 Overview Dashboard
+
 - Overall IPL dataset KPIs
 - Match and season summaries
 - Team performance trends
@@ -38,6 +39,7 @@ The platform focuses on answering questions such as:
 - Seasonal analysis
 
 ### 🏏 Batting Analytics
+
 - Total runs
 - Strike rate
 - Boundary analysis
@@ -46,6 +48,7 @@ The platform focuses on answering questions such as:
 - Player-level batting performance
 
 ### 🎯 Bowling Analytics
+
 - Total wickets
 - Economy rate
 - Runs conceded
@@ -55,6 +58,7 @@ The platform focuses on answering questions such as:
 - Bowler performance table
 
 ### 🏆 Team Analytics
+
 - Matches played
 - Wins and losses
 - Win percentage
@@ -65,6 +69,7 @@ The platform focuses on answering questions such as:
 - Match results
 
 ### 👤 Player Analytics
+
 - Player performance
 - Batting statistics
 - Bowling statistics
@@ -72,6 +77,7 @@ The platform focuses on answering questions such as:
 - Player images and profiles
 
 ### 🏟️ Venue Analytics
+
 - Venue-wise performance
 - Matches played
 - Wins and losses
@@ -98,7 +104,7 @@ PostgreSQL
       ├── Bowling Analytics
       ├── Team Analytics
       ├── Venue Analytics
-      └── RR Analysis
+      └── Rajasthan Royals Analysis
       │
       ▼
 Node.js + Express APIs
@@ -108,6 +114,7 @@ React Dashboard
       │
       ▼
 Interactive Cricket Analytics
+```
 
 ---
 
@@ -139,7 +146,6 @@ Interactive Cricket Analytics
 
 ---
 
-
 ## 🏗️ System Architecture
 
 RoyalVision follows a layered analytics architecture:
@@ -147,7 +153,7 @@ RoyalVision follows a layered analytics architecture:
 ```text
                     ┌─────────────────────┐
                     │    IPL Match Data   │
-                    │   CSV / Raw Dataset  │
+                    │   CSV / Raw Dataset │
                     └──────────┬──────────┘
                                │
                                ▼
@@ -181,10 +187,9 @@ RoyalVision follows a layered analytics architecture:
                     │     Power BI        │
                     │ Business Reporting  │
                     └─────────────────────┘
+```
 
-
-
-
+---
 
 ## 📁 Project Structure
 
@@ -238,43 +243,70 @@ RoyalVision/
 │
 ├── docker-compose.yml
 └── README.md
-
+```
 
 ---
 
 ## ⚙️ Installation & Setup
 
-### 1. Clone the Repository
+### Clone the Repository
 
 ```bash
 git clone https://github.com/bhavishya142/royal-vision.git
-cd royal-vision---
+cd royal-vision
+```
 
-## 🔌 API Documentation
+### Backend
 
-RoyalVision exposes REST APIs through a Node.js and Express backend.
-The APIs retrieve analytical data from PostgreSQL and provide it to the React dashboard.
+```bash
+cd backend
+npm install
+npm run dev
+```
 
-### Base URL
-http://localhost:5000/api
+The backend runs on:
 
+```text
+http://localhost:5000
+```
+
+### Frontend
+
+Open another terminal:
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+The frontend runs using the Vite development server.
+
+### Database
+
+RoyalVision uses PostgreSQL for storing and querying analytical data.
+
+Docker Compose is provided for the PostgreSQL and pgAdmin environment:
+
+```bash
+docker compose up -d
+```
+
+Environment variables should be configured locally using the provided
+`.env.example` files.
 
 ---
 
-## 📈 Power BI Analytics
-
-RoyalVision also includes a Power BI report for interactive business intelligence and analytical reporting.
-
-The Power BI report provides an additional analytical layer alongside the React dashboard.
-
-### Power BI Report
-
-powerbi/RoyalVision.pbix
-
-
 ## 🔌 Backend API
 
-RoyalVision exposes cricket analytics through REST APIs built with Node.js and Express.
+RoyalVision exposes cricket analytics through REST APIs built with
+Node.js and Express.
+
+### Base URL
+
+```text
+http://localhost:5000/api
+```
 
 ### API Modules
 
@@ -287,7 +319,7 @@ RoyalVision exposes cricket analytics through REST APIs built with Node.js and E
 | Player | Player-level analytics |
 | Venue | Venue-wise performance |
 
-### API Structure
+### API Flow
 
 ```text
 React Dashboard
@@ -303,10 +335,14 @@ Node.js + Express
        │
        ▼
 Analytics SQL Queries
+```
+
+---
 
 ## 🔄 Data Pipeline
 
-RoyalVision follows a structured data pipeline from raw IPL data to interactive analytics.
+RoyalVision follows a structured data pipeline from raw IPL data to
+interactive analytics.
 
 ```text
 Raw CSV Files
@@ -339,3 +375,76 @@ Node.js + Express
      │
      ▼
 React Dashboard
+```
+
+---
+
+## 📈 Power BI Analytics
+
+RoyalVision also includes a Power BI report for business intelligence
+and analytical reporting.
+
+The Power BI report provides an additional analytical layer alongside
+the React dashboard.
+
+### Power BI Report
+
+```text
+powerbi/RoyalVision.pbix
+```
+
+---
+
+## 🗄️ SQL Analytics
+
+Analytical SQL queries are organized into dedicated modules:
+
+| File | Analysis |
+|---|---|
+| `01_overview.sql` | Overall analytics |
+| `02_batting.sql` | Batting analytics |
+| `03_bowling.sql` | Bowling analytics |
+| `04_team.sql` | Team analytics |
+| `05_venue.sql` | Venue analytics |
+| `06_rr_analysis.sql` | Rajasthan Royals analysis |
+
+This separation keeps analytical logic organized and maintainable.
+
+---
+
+## 🛠️ Technologies Used
+
+- React
+- Node.js
+- Express
+- PostgreSQL
+- Python
+- Pandas
+- SQL
+- Power BI
+- Docker
+- Recharts
+- Git & GitHub
+
+---
+
+## 🔮 Future Enhancements
+
+- Live IPL data integration
+- Advanced player comparison
+- Predictive performance models
+- Match outcome prediction
+- Player recommendation system
+- Automated data ingestion pipeline
+- Production deployment
+- Authentication and role-based access
+
+---
+
+## 👨‍💻 Project
+
+**RoyalVision — Cricket Analytics & Decision Support Platform**
+
+Built as a full-stack data analytics project combining data processing,
+SQL analytics, backend engineering, interactive visualization, and
+business intelligence.

@@ -128,7 +128,7 @@ function Overview() {
         </span>
 
         <strong>
-            2022–2025
+            2022–2024
         </strong>
 
         <small>
