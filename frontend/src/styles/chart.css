@@ -1,0 +1,791 @@
+/* =========================================================
+   CHART CARD
+========================================================= */
+
+.chart-card {
+    width: 100%;
+    min-width: 0;
+
+    background: #1E293B;
+
+    border: 1px solid rgba(255, 255, 255, 0.06);
+
+    border-radius: 18px;
+
+    padding: 20px;
+
+    box-sizing: border-box;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.20);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.chart-card:hover {
+    transform: translateY(-4px);
+
+    box-shadow: 0 14px 32px rgba(0, 0, 0, 0.30);
+}
+
+
+/* =========================================================
+   CHART TITLE
+========================================================= */
+
+.chart-title {
+    margin: 0 0 20px 0;
+
+    color: #F8FAFC;
+
+    font-size: 20px;
+
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   CHART CONTAINER
+========================================================= */
+
+.chart-container {
+    width: 100%;
+
+    min-width: 0;
+
+    height: 360px;
+
+    overflow: visible;
+}
+
+
+/* =========================================================
+   VENUE / OPPONENT CHARTS
+========================================================= */
+
+.venue-chart {
+    height: 500px;
+}
+
+.opponent-chart {
+    height: 500px;
+}
+
+
+/* =========================================================
+   MATCHES BY SEASON
+========================================================= */
+
+.overview-chart {
+    width: 100%;
+
+    min-width: 0;
+
+    background: #1E293B;
+
+    border: 1px solid rgba(255, 255, 255, 0.06);
+
+    border-radius: 18px;
+
+    padding: 20px;
+
+    box-sizing: border-box;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.20);
+}
+
+
+/* =========================================================
+   MATCHES BY SEASON HEADER
+========================================================= */
+
+.overview-chart-header {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: flex-start;
+
+    gap: 20px;
+
+    padding-bottom: 18px;
+
+    margin-bottom: 15px;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+
+.overview-chart-label {
+    display: block;
+
+    color: #60A5FA;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+
+    margin-bottom: 5px;
+}
+
+
+.overview-chart-header h3 {
+    margin: 0;
+
+    color: #F8FAFC;
+
+    font-size: 20px;
+
+    font-weight: 700;
+}
+
+
+.overview-chart-description {
+    margin: 5px 0 0;
+
+    color: #94A3B8;
+
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   TOTAL MATCHES
+========================================================= */
+
+.overview-chart-total {
+    text-align: right;
+
+    min-width: 70px;
+}
+
+
+.overview-chart-total span {
+    display: block;
+
+    color: #64748B;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+}
+
+
+.overview-chart-total strong {
+    display: block;
+
+    margin-top: 3px;
+
+    color: #F8FAFC;
+
+    font-size: 24px;
+
+    font-weight: 800;
+}
+
+
+/* =========================================================
+   MATCHES BY SEASON CHART AREA
+========================================================= */
+
+.overview-chart-container {
+    width: 100%;
+
+    height: 300px;
+
+    min-width: 0;
+
+    overflow: visible;
+}
+
+
+/* =========================================================
+   RECENT MATCHES CARD
+========================================================= */
+
+.recent-matches-card {
+    width: 100%;
+
+    background: #1E293B;
+
+    border: 1px solid rgba(255, 255, 255, 0.06);
+
+    border-radius: 18px;
+
+    padding: 20px;
+
+    margin-top: 25px;
+
+    box-sizing: border-box;
+
+    overflow-x: auto;
+}
+
+
+/* =========================================================
+   RECENT MATCHES TITLE
+========================================================= */
+
+.recent-matches-title {
+    color: #F8FAFC;
+
+    font-size: 20px;
+
+    font-weight: 700;
+
+    margin: 0 0 20px 0;
+}
+
+
+/* =========================================================
+   RECENT MATCHES TABLE
+========================================================= */
+
+.recent-matches-table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    table-layout: fixed;
+}
+
+
+/* =========================================================
+   TABLE HEADINGS
+========================================================= */
+
+.recent-matches-table th {
+    color: #F8FAFC;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    text-align: left;
+
+    padding: 10px 14px;
+
+    border-bottom: 1px solid #334155;
+}
+
+
+/* =========================================================
+   TABLE DATA
+========================================================= */
+
+.recent-matches-table td {
+    color: #E2E8F0;
+
+    font-size: 14px;
+
+    padding: 7px 14px;
+
+    vertical-align: top;
+
+    line-height: 1.35;
+}
+
+
+/* =========================================================
+   TABLE COLUMN WIDTHS
+
+   1 = Season
+   2 = Venue
+   3 = Winner
+   4 = Opponent
+========================================================= */
+
+.recent-matches-table th:nth-child(1),
+.recent-matches-table td:nth-child(1) {
+    width: 7%;
+}
+
+
+.recent-matches-table th:nth-child(2),
+.recent-matches-table td:nth-child(2) {
+    width: 50%;
+}
+
+
+.recent-matches-table th:nth-child(3),
+.recent-matches-table td:nth-child(3) {
+    width: 22%;
+}
+
+
+.recent-matches-table th:nth-child(4),
+.recent-matches-table td:nth-child(4) {
+    width: 21%;
+}
+
+
+/* =========================================================
+   TABLE ROW HOVER
+========================================================= */
+
+.recent-matches-table tbody tr {
+    transition: background 0.2s ease;
+}
+
+
+.recent-matches-table tbody tr:hover {
+    background: rgba(255, 255, 255, 0.03);
+}
+
+
+/* =========================================================
+   RESPONSIVE - TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .venue-chart {
+        height: 420px;
+    }
+
+    .opponent-chart {
+        height: 420px;
+    }
+
+    .overview-chart-container {
+        height: 280px;
+    }
+
+    .recent-matches-table {
+        min-width: 850px;
+    }
+}
+
+
+/* =========================================================
+   RESPONSIVE - MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .chart-card {
+        padding: 15px;
+    }
+
+
+    .chart-title {
+        font-size: 18px;
+    }
+
+
+    .venue-chart {
+        height: 500px;
+    }
+
+
+    .opponent-chart {
+        height: 500px;
+    }
+
+
+    .overview-chart {
+        padding: 15px;
+    }
+
+
+    .overview-chart-header {
+        flex-direction: column;
+    }
+
+
+    .overview-chart-total {
+        text-align: left;
+    }
+
+
+    .overview-chart-container {
+        height: 280px;
+    }
+
+
+    .recent-matches-card {
+        padding: 15px;
+    }
+
+
+    .recent-matches-table {
+        min-width: 750px;
+    }
+}
+
+
+
+/* =========================================================
+   MATCHES BY SEASON - FINAL SIZE
+========================================================= */
+
+.matches-season-chart {
+    width: 100%;
+    height: 380px;
+    min-width: 0;
+    overflow: visible;
+}
+
+
+/* Make the Matches by Season card fill its grid cell */
+
+.overview-chart {
+    width: 100%;
+    min-width: 0;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .matches-season-chart {
+        height: 330px;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .matches-season-chart {
+        height: 300px;
+    }
+
+}
+
+/* =========================
+   BATTING PERFORMANCE TABLE
+========================= */
+
+.batting-table-card {
+    width: 100%;
+
+    background: #1E293B;
+
+    border: 1px solid rgba(255, 255, 255, 0.06);
+
+    border-radius: 18px;
+
+    padding: 20px;
+
+    box-sizing: border-box;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.20);
+
+    overflow: hidden;
+}
+
+
+/* =========================
+   TITLE
+========================= */
+
+.batting-table-title {
+    margin: 0 0 20px 0;
+
+    color: #F8FAFC;
+
+    font-size: 20px;
+
+    font-weight: 700;
+}
+
+
+/* =========================
+   TABLE WRAPPER
+========================= */
+
+.batting-table-wrapper {
+    width: 100%;
+
+    overflow-x: auto;
+}
+
+
+/* =========================
+   TABLE
+========================= */
+
+.batting-table {
+    width: 100%;
+
+    min-width: 800px;
+
+    border-collapse: collapse;
+
+    table-layout: fixed;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.batting-table th {
+    color: #F8FAFC;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    text-align: left;
+
+    padding: 12px 14px;
+
+    border-bottom:
+        1px solid #334155;
+
+    white-space: nowrap;
+}
+
+
+/* =========================
+   DATA
+========================= */
+
+.batting-table td {
+    color: #E2E8F0;
+
+    font-size: 14px;
+
+    padding: 11px 14px;
+
+    border-bottom:
+        1px solid rgba(255, 255, 255, 0.04);
+
+    white-space: nowrap;
+}
+
+
+/* =========================
+   COLUMN WIDTHS
+========================= */
+
+.batting-table th:nth-child(1),
+.batting-table td:nth-child(1) {
+    width: 8%;
+}
+
+
+.batting-table th:nth-child(2),
+.batting-table td:nth-child(2) {
+    width: 30%;
+}
+
+
+.batting-table th:nth-child(3),
+.batting-table td:nth-child(3) {
+    width: 13%;
+}
+
+
+.batting-table th:nth-child(4),
+.batting-table td:nth-child(4) {
+    width: 10%;
+}
+
+
+.batting-table th:nth-child(5),
+.batting-table td:nth-child(5) {
+    width: 10%;
+}
+
+
+.batting-table th:nth-child(6),
+.batting-table td:nth-child(6) {
+    width: 15%;
+}
+
+
+.batting-table th:nth-child(7),
+.batting-table td:nth-child(7) {
+    width: 14%;
+}
+
+
+/* =========================
+   PLAYER NAME
+========================= */
+
+.batting-player {
+    font-weight: 600;
+
+    color: #F8FAFC;
+}
+
+
+/* =========================
+   ROW HOVER
+========================= */
+
+.batting-table tbody tr {
+    transition:
+        background 0.2s ease;
+}
+
+
+.batting-table tbody tr:hover {
+    background:
+        rgba(255, 255, 255, 0.03);
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 900px) {
+
+    .batting-table {
+        min-width: 800px;
+    }
+
+}
+
+
+/* =========================
+   BOWLING PERFORMANCE TABLE
+========================= */
+
+.bowling-table {
+    width: 100%;
+    min-width: 900px;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.bowling-table th {
+    color: #F8FAFC;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: left;
+    padding: 12px 14px;
+    border-bottom: 1px solid #334155;
+    white-space: nowrap;
+}
+
+.bowling-table td {
+    color: #E2E8F0;
+    font-size: 14px;
+    padding: 11px 14px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.bowling-table tbody tr {
+    transition: background 0.2s ease;
+}
+
+.bowling-table tbody tr:hover {
+    background: rgba(255, 255, 255, 0.04);
+}
+
+
+/* Rank */
+
+.bowling-table th:nth-child(1),
+.bowling-table td:nth-child(1) {
+    width: 7%;
+}
+
+
+/* Bowler */
+
+.bowling-table th:nth-child(2),
+.bowling-table td:nth-child(2) {
+    width: 27%;
+}
+
+
+/* Wickets */
+
+.bowling-table th:nth-child(3),
+.bowling-table td:nth-child(3) {
+    width: 11%;
+}
+
+
+/* Runs */
+
+.bowling-table th:nth-child(4),
+.bowling-table td:nth-child(4) {
+    width: 14%;
+}
+
+
+/* Overs */
+
+.bowling-table th:nth-child(5),
+.bowling-table td:nth-child(5) {
+    width: 13%;
+}
+
+
+/* Economy */
+
+.bowling-table th:nth-child(6),
+.bowling-table td:nth-child(6) {
+    width: 13%;
+}
+
+
+/* Dot Balls */
+
+.bowling-table th:nth-child(7),
+.bowling-table td:nth-child(7) {
+    width: 15%;
+}
+
+
+/* Highlight important statistics */
+
+.bowling-table td:nth-child(3) {
+    font-weight: 700;
+}
+
+.bowling-table td:nth-child(6) {
+    color: #10B981;
+    font-weight: 700;
+}
+
+.bowling-table td:nth-child(7) {
+    color: #60A5FA;
+    font-weight: 700;
+}
+
+
+/* First ranked bowler */
+
+.bowling-table tbody tr:first-child td:nth-child(2) {
+    color: #60A5FA;
+    font-weight: 700;
+}
+
+
+/* Mobile */
+
+@media (max-width: 900px) {
+
+    .bowling-table {
+        min-width: 850px;
+    }
+
+    .bowling-table th,
+    .bowling-table td {
+        font-size: 13px;
+        padding: 10px 12px;
+    }
+
+}

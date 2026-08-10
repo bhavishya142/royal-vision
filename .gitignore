@@ -29,3 +29,9 @@ datasets/processed/
 
 # Jupyter
 .ipynb_checkpoints/
+
+# Large raw dataset
+datasets/raw/deliveries.csv
+
+# Generated processed datasets
+datasets/processed/
