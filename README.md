@@ -303,3 +303,39 @@ Node.js + Express
        │
        ▼
 Analytics SQL Queries
+
+## 🔄 Data Pipeline
+
+RoyalVision follows a structured data pipeline from raw IPL data to interactive analytics.
+
+```text
+Raw CSV Files
+     │
+     ▼
+Python + Pandas
+     │
+     ├── Data validation
+     ├── Filtering
+     └── Dataset preparation
+     │
+     ▼
+PostgreSQL
+     │
+     ├── Match data
+     └── Delivery data
+     │
+     ▼
+SQL Analytics
+     │
+     ├── Overview
+     ├── Batting
+     ├── Bowling
+     ├── Team
+     ├── Venue
+     └── Rajasthan Royals Analysis
+     │
+     ▼
+Node.js + Express
+     │
+     ▼
+React Dashboard
