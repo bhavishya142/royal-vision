@@ -4,7 +4,8 @@ import {
     Shield,
     MapPinned,
     Trophy,
-    UserRoundSearch
+    UserRoundSearch,
+    ChartNoAxesCombined
 } from "lucide-react"
 
 import { Link, useLocation } from "react-router-dom"
@@ -35,7 +36,12 @@ const menus = [
         icon: <UserRoundSearch size={18}/>,
         path: "/players"
     },
-
+    
+    {
+    name: "SupeRR Analytics",
+    icon: <ChartNoAxesCombined size={18}/>,
+    path: "/superr"
+},
 
     {
 

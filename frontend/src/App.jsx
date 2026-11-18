@@ -6,6 +6,7 @@ import Batting from "./pages/Batting";
 import Bowling from "./pages/Bowling";
 import Venue from "./pages/Venue";
 import Players from "./pages/Player";
+import SupeRR from "./pages/SupeRR";
 
 function App() {
     return (
@@ -47,6 +48,11 @@ function App() {
                     path="/venue"
                     element={<Venue />}
                 />
+
+                <Route
+    path="/superr"
+    element={<SupeRR />}
+/>
 
             </Routes>
 
